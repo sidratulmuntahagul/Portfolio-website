@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noman gul</title>
+  <style>
+body{
+  background-color: rgb(18, 42, 43);
+}
+img{
+  border-radius: 50%;
+}
+.name{
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(51, 129, 153);
+}
+.name h1,h2{
+  color: green;
+}
+.name button{
+  color: white;
+  background-color: cadetblue;
+}
+.name form{
+  color: white;
+  background-color: rgb(71, 83, 95);
+}
+.container {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  transform: rotateY(150);
+}
+.form{
+  color: rgb(123, 231, 231);
+}
+   </style>
+</head>
+<body>
+  <div class="container">
+  <center><img src="https://avatars2.githubusercontent.com/u/39244918?s=460&u=61ab752ffc66e73437c5ca3729346783a27f63a0&v=4" class="image" style="width: 50%;" ></center>
+  <div class="middle">
+    <div class="text"><b>Noman gul</b></div>
+  </div>
+</div>
+  <div class="name">
+        <h1 class="white">Let's Get Started!</h1>
+        <p>Contact us today to discuss your next online project.</p>
+        <h2>Tell us About Yourself</h2>
+            <p>Contact us today to discuss how Big Data can help your company!</p>
+        <form name="contactForm" id="contactForm" method="POST" action="">
+          <div class="form"><label><b>First Name</b></label>
+                <input type="text" placeholder="First Name">
+              <br/><br/>
+                <label><b>Last Name</b></label>
+                <input type="text" placeholder="Last Name">
+              <br/><br/>
+                <label><b>Company</b></label>
+                <input type="text" placeholder="Company">
+               <br/><br/>
+                <label><b>Phone #</b></label>
+                <input type="text" placeholder="Phone #">
+                <br/><br/>
+                <label><b>Email</b></label>
+                <input type="text" placeholder="yourname@domain.com">
+              <br/><br/>
+                <label for="select-beast"><b>I'm Interested In:</b></label>
+                <select id="select-beast" placeholder="Select a service...">
+                  <option value="">Select a service...</option>
+                  <option value="4">Digital Marketing</option>
+                  <option value="1">Social Media</option>
+                  <option value="3">E-Commerce</option>
+                  <option value="5">Mobile Advertising</option>
+                </select><br/></div>
+                <p id="class"></p>
+              <button type="button" onclick="document.getElementsById('class')">Contact us</button>
+        </form>
+      </div>
+</body>
+</html>
